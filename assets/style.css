@@ -23,3 +23,11 @@
 .connection-detail .figure img{max-height:600px;background:white}
 .connection-detail figcaption .text-link{font-size:12px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before{transition:none!important}}
+
+.header .nav{margin-left:auto}
+.language-switch{display:flex;flex-shrink:0;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.language-switch button{border:0;background:white;color:var(--muted);padding:8px 10px;font-size:12px;font-weight:700;min-height:40px;min-width:40px}
+.language-switch button[aria-pressed=true]{background:var(--red);color:white}
+.language-switch button:focus-visible{outline-offset:-4px}
+@media(max-width:720px){.header .wrap{gap:10px}.header .identity{margin-right:auto;gap:9px}.header .monogram{padding-right:9px}.menu-toggle{padding:8px 10px}.language-switch button{padding:8px}.header .nav{margin-left:0}}
+@media(max-width:390px){.header .identity small{display:none}.header .monogram{display:none}.header .identity{font-size:12px}.menu-toggle{font-size:13px}}
